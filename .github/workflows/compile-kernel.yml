@@ -19,6 +19,7 @@ on:
           - unifreq
           - kernel.org
           - Jencken-Wang/linux-5.4.y@dev
+          - Jencken-Wang/linux-5.4.y@main
       kernel_version:
         description: "Select kernel version"
         required: false

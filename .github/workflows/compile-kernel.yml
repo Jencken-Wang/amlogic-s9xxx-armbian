@@ -18,6 +18,7 @@ on:
         options:
           - unifreq
           - kernel.org
+          - Jencken-Wang/linux-5.4.y@dev
       kernel_version:
         description: "Select kernel version"
         required: false
@@ -80,7 +81,7 @@ jobs:
           echo "::set-output name=status::success"
 
       - name: Compile the kernel
-        uses: ophub/amlogic-s9xxx-armbian@main
+        uses: Jencken-Wang/amlogic-s9xxx-armbian@main
         with:
           build_target: kernel
           kernel_repo: ${{ github.event.inputs.kernel_repo }}
